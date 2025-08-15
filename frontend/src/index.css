@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import "remixicon/fonts/remixicon.css" ;
+@layer utilities {
+  .hide-scrollbar {
+    /* For WebKit browsers (Chrome, Safari, etc.) */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+.apptoast {
+  background-color: rgb(172, 170, 170) !important;
+}
