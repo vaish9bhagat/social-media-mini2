@@ -11,7 +11,7 @@ const Profile = () => {
 
   const fetchdata = async () => {
     try {
-      const res = await axios.get(`http://localhost:3000/user/profile`, {
+      const res = await axios.get(`https://capgen-7lpn.onrender.com/user/profile`, {
         withCredentials: true,
       });
       setuser(res.data.user.username);

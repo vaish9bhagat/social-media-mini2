@@ -15,7 +15,7 @@ const Register = () => {
 
   const registerhandler = async (user) => {
     axios
-      .post(`http://localhost:3000/auth/register`, user, {
+      .post(`https://capgen-7lpn.onrender.com/auth/register`, user, {
         withCredentials: true,
       })
       .then((res) => {

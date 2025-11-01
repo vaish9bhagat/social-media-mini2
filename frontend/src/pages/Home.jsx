@@ -11,7 +11,7 @@ const Home = forwardRef((props, divref) => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/post/allposts`, { withCredentials: true })
+      .get(`https://capgen-7lpn.onrender.com/post/allposts`, { withCredentials: true })
       .then((res) => {
         console.log(res);
         setPost(res.data.posts);

@@ -17,7 +17,7 @@ const Login = () => {
   const loginhandler = async (user) => {
     console.log(user);
     axios
-      .post(`http://localhost:3000/auth/login`, user, { withCredentials: true })
+      .post(`https://capgen-7lpn.onrender.com/auth/login`, user, { withCredentials: true })
       .then((res) => {
         toast.success(res.data.message);
         navigate("/home");
