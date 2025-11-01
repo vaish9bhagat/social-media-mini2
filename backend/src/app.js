@@ -15,7 +15,7 @@ app.use("/auth", authroutes);
 app.use("/post", postroutes);
 app.use("/user", profileroutes);
 
-app.get("*", (req, res) => {
+app.get("*name", (req, res) => {
     res.sendFile(__dirname, "../public/index.html")
 
 })
