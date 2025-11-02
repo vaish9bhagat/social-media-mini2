@@ -17,7 +17,7 @@ const Home = forwardRef((props, divref) => {
         })
         .then((res) => {
           console.log(res);
-          setPost(res.data.posts);
+          setPost(res.data.posts.reverse());
         })
         .catch((err) => {
           console.log(err);
