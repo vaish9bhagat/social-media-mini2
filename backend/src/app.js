@@ -20,7 +20,7 @@ app.use("/post", postroutes);
 app.use("/user", profileroutes);
 
 app.get("*name", (req, res) => {
-    res.sendFile(__dirname, "../public/index.html")
+    res.sendFile(path.join(__dirname, "../public/index.html"))
 
 })
 
