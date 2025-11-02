@@ -33,14 +33,14 @@ const createpostcontroller = async (req, res) => {
 
 }
 const showpostcontroller = async (req, res) => {
-    const posts = await postmodel.find();
+    const posts = (await postmodel.find()).reverse();
     const user = req.user;
 
 
     res.json({
         message: "post fetched successfully",
         posts,
-         
+
 
 
     })
